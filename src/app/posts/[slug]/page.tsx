@@ -3,10 +3,10 @@ import {
   useContentfulInspectorMode,
   useContentfulLiveUpdates,
 } from '@contentful/live-preview/react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import Head from 'next/head';
 import ErrorPage from 'next/error';
-import { Post as PostType, getAllPostsWithSlug, getPost } from '../../lib/api-graphql';
+import { Post as PostType, getAllPostsWithSlug, getPost } from '../../../lib/api-graphql';
 
 interface PostProps {
   post: PostType | null;
